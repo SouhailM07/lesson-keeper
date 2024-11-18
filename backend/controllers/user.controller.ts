@@ -4,8 +4,10 @@ import handleResponse from "../lib/handleResponse";
 import handleError from "../lib/handleError";
 
 export const getUsers_c = async (req: Request, res: Response) => {
+  //   let users = await User.find({});
+  //   handleResponse(res, users);
   let users = await User.find({});
-  handleResponse(res, users);
+  res.status(200).send(users);
 };
 
 export const getUser_c = async (req: Request, res: Response) => {
