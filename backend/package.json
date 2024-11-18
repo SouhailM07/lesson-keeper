@@ -5,7 +5,7 @@
   "scripts": {
     "build": "tsc",
     "start": "tsc && node dist/index.js",
-    "dev": "ts-node-dev api/index.ts"
+    "dev": "ts-node-dev index.ts"
   },
   "keywords": [],
   "author": "",

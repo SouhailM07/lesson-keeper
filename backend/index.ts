@@ -25,5 +25,3 @@ app.listen(process.env.PORT! || 3000, () => {
   console.log("The server is online and ready !");
   console.log("================================");
 });
-
-export default app;
