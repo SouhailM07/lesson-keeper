@@ -1,0 +1,21 @@
+###
+GET http://localhost:3007/users
+###
+GET http://localhost:3007/users/673b0f38aa12a44335c9c73b
+###
+POST http://localhost:3007/users/create_user
+Content-Type: application/json
+
+{
+    "clerkId":"shadow Id 08"
+}
+###
+PUT http://localhost:3007/users/edit_user?id=673b0f38aa12a44335c9c734
+Content-Type: application/json
+
+{
+    "sidebar_preferred_direction":true
+}
+###
+
+DELETE http://localhost:3007/users/delete_user?id=673b0b6a700275fae9158826

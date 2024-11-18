@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "noImplicitAny": false,
+    "target": "es6",
+    "module": "NodeNext",
+    "strict": true,
+    "esModuleInterop": true,
+    "outDir": "./dist"
+  },
+  "include": [
+    "api/**/*.ts",
+    "models/**/*.ts",
+    "routes/**/*.ts",
+    "controllers/**/*.ts",
+    "utils/**/*.ts", // if you have a utils folder as well
+    "lib/**/*.ts" // if you have a utils folder as well
+  ],
+  "exclude": ["node_modules"]
+}
