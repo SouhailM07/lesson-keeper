@@ -1,5 +1,6 @@
 import express, { Request, Response } from "express";
 import "dotenv/config";
+import ServerlessHttp from "serverless-http";
 import connectToDatabase from "../lib/connectDB";
 // ? imported routers
 import userRouter from "../routers/users/user.router";
@@ -25,3 +26,5 @@ app.listen(process.env.PORT!, () => {
   console.log("The server is online and ready !");
   console.log("================================");
 });
+
+export default ServerlessHttp(app);
